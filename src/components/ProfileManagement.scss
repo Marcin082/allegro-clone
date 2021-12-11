@@ -1,0 +1,133 @@
+@import 'config';
+.profile{
+    background-color: rgb(234, 238, 240);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 280px;
+    border:$border-color 1px solid;
+    text-align: center;
+    position: relative;
+    top:55px;
+    transform: translateX(-90%);
+    overflow: hidden;
+    height: 560px;
+    position: fixed;
+    position: absolute;
+    &__nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        cursor: pointer;
+        margin-top: 10px;
+        border-bottom: 1px $border-color solid;
+        height: 27px;
+        
+        &--btn{
+            
+            border: none;
+            background-color: white;
+            font-family: $font-open;
+            letter-spacing: 1.5px;
+            font-size: 13px;
+            margin-bottom:10px;
+            cursor: pointer;
+            padding-top: 10px;
+            padding-bottom: 26px !important;
+            transform: translateY(-10px);
+            width: 34%;
+            &:hover{
+                color: $note-color;
+            }
+           
+        }
+    }
+    &__page{
+        
+    }
+    &__section{
+        width: 280px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-bottom: 7px;
+        background-color: $base-color;
+        &--head{
+            font-size: 12px;
+            letter-spacing: -0.7px;
+            padding-left: 13px  !important;
+            padding: 0px;
+            margin: 0px;
+            margin-top: 5px;
+        }
+        &--option{
+            list-style: none;
+            border-bottom: 1px $border-color solid;
+            width:100%;
+            padding: 10px 0 10px 13px ;
+            font-size: 13px;
+            color: rgb(73, 73, 73);
+            &:hover{
+                color: $note-color;
+            }
+        }
+    }
+    &__data{
+        display: flex;
+        justify-content: space-between;
+        margin: 10px;
+        border-bottom: 1px $border-color solid;
+        padding-bottom: 20px;
+        &--mail{
+            font-size: 13px;
+            color: $additional-color;
+        }
+        &--img{
+            transform: translate(-15px,6px);
+            height: 50px;  
+            width: 50px;
+        }
+        &--mailContainer{
+            display: flex;
+            flex-direction: column;
+        }
+        &--hello{
+            font-size: 15px;
+            padding:0;
+            margin: 5px 0 0 0 ;
+            
+        }
+    }
+    &__myAccount{
+        text-align: center;
+        &:hover{
+            opacity: 0.8;
+        }
+        &--para{
+            font-size: 13.5px;
+            letter-spacing: 1.4px;
+            color: $note-color;
+            margin: 0;
+            padding: 0 0 10px 0;
+            
+
+        }
+      
+    }
+    &__logout{
+        margin-top: 145px;
+        &--btn{
+            font-size: 12.5px;
+            letter-spacing: 2px;
+            border: none;
+            width: 100%;
+            font-weight: 500;
+            background-color: $base-color;
+            padding-top: 13px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+    
+}

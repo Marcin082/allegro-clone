@@ -1,0 +1,220 @@
+@import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.emptyHeader{
+    background-color: $base-color;
+    width: 100%;
+    &__logo{
+        width:130px;
+        object-fit: contain;
+        margin: 16px 40px 15px 15px;
+    }
+}
+.loginContainer{
+    margin:20px auto;
+    background-color: $base-color;
+    width:660px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+    font-family:$font-open;
+    &__header{
+        font-size: 23px;
+        font-weight:600;    
+        margin-bottom: 13px;
+        margin-top: -10px;
+    }
+    &__data{
+
+        &--input{
+            width:98%;
+            height:35px;
+            margin-top: 16px;
+            outline: none;
+            background-color: $base-color;
+            border:$border-color 1.8px solid;
+            border-radius: 2px;
+            padding-left: 7px;
+            font-size: 13px;
+            &:hover{
+                border: 2px solid rgb(143, 138, 138);
+                border-radius: 0;
+            }
+           
+        }
+        &--showInput{
+            width:97%;
+            margin-left: 4px;
+            margin-top: 5px;
+            height: 24px;
+            transform: translateY(18px) ;
+            font-size: 15px;
+            padding-top: -3px;
+            border: none;
+            outline: none;
+            font-size: 13.5px;
+            color: rgb(90, 89, 89);
+        }
+        &--password{ 
+            position: relative;
+            &--showInput{
+                width:97%;
+                transform: translate(5px,20px);
+                height: 29px;  
+                font-size: 15px;
+                font-size: 13.5px;
+                color: rgb(90, 89, 89);
+                border: none;
+                outline: none;
+            }
+            &--input{
+                width:98%;
+                
+            }
+            &--btn{
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color:$note-color;
+                letter-spacing: 2px;
+                position: absolute;
+                overflow: hidden;
+                margin: 27px 0 40px -73px;
+                cursor: pointer;
+                font-size: 12.5px;
+            }
+        }
+        
+        
+
+    }
+    &__fieldset{
+        margin-bottom: 0px;
+        width:98%;
+        height:42px;
+        border: 2px solid rgb(143, 138, 138);
+        margin-left: -0.2px;
+        margin-top: -20px;
+        &--legend{
+            font-size: 11.4px;
+            color: $additional-color;
+            transition: 1.6s;
+            margin-left: -8px;
+        }
+        &--inputPsw{
+            width:98%;
+            height:35px;
+            margin-top: -12px;
+            outline: none;
+            background-color: $base-color;
+            border:$border-color 1.8px solid;
+            border-radius: 2px;
+            padding-left: 7px;
+            font-size: 13.5px;
+            color: rgb(90, 89, 89);
+            border: none;
+            transform: translateX(-12px);
+            
+        } 
+       
+        &--btnFieldset{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color:$note-color;
+            letter-spacing: 2px;
+            position: absolute;
+            overflow: hidden;
+            cursor: pointer;
+            font-size: 12.5px;
+            transform: translate(522px,-3px);
+        }
+        &--Psw{
+            margin-top:-20px;   
+            margin-left:-0.3px;   
+            width:98.2%;
+            height:42px;
+            border: 2px solid rgb(143, 138, 138);
+        }
+    }
+    &__button{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        width:98%;
+        &--forgot{
+            color: $note-color;
+            font-size: 13px;
+        }
+        &--btn{
+            float: right;
+            background-color: $orange-color;
+            color: $base-color;
+            border-radius: 2px;
+            letter-spacing: 2px;
+            font-weight: 500;
+            padding: 0 13px;
+            font-family: $font-open;
+            font-size: 14.5px;
+            cursor: pointer;
+            height: 40px;
+            border: none;
+            outline: none;
+            width: 280px;
+        }
+    }
+}
+.footer{
+    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    &__span{
+        font-weight: 700;
+        margin-right: 9px;
+    }
+    &__link{
+        text-decoration: none;
+        color: $note-color;
+        font-weight: 500;
+    }
+    &__rules{
+        margin:20px auto;
+        width:660px;
+        padding: 0px 25px 0px 25px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: left;
+        justify-content: center;
+        flex-direction: column;
+        font-family: $font-open;
+        font-size: 11px;
+        transform: translateY(-12px);
+    }
+    &__rule{
+         color: $note-color;
+         cursor: pointer;
+    }
+}
+.ending{
+    display: flex;
+    background-color: rgb(54, 67, 77);
+    padding: 10px;
+    font-family: "Open Sans",sans-serif;
+    font-size: 13px;
+    justify-content: space-between;
+    align-items: center;
+    &__paragraph{
+        color: white;
+    }
+    &__span{
+        color: $note-color;
+    }
+    &__logo{
+        width: 110px;
+        margin-top: 5px;
+    }
+}

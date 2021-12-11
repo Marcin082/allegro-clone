@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import 'config';
+.emptyHeader{
+    background-color: $base-color;
+    width: 100%;
+}
+.head{
+    font-size: 35px;
+    font-weight:300;    
+    margin-bottom: 13px;
+}
+.container{
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: $font-open;
+}
+.register{
+    background-color: $base-color;
+    width:660px;
+    padding:20px; 
+    font-family: 'Roboto', sans-serif; 
+    &__title{
+        font-size: 16.38px;
+        font-weight: 500;
+        font-family: 'Roboto', sans-serif;
+        padding-bottom: 10px;
+        
+    }
+    &__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    &__input{
+        width:98%;
+        height:35px;
+        margin-top: 16px;
+        outline: none;
+        background-color: $base-color;
+        border:$border-color 1.8px solid;
+        border-radius: 2px;
+        padding-left: 7px;
+        &--header{
+            font-size: 14px;
+            &:hover,&:focus{
+            border:$additional-color 2px solid;
+            }
+            &--psw{
+                margin-bottom: 20px !important;
+            }
+            &--mail{
+                margin-top: 20px;
+            }
+        }
+        &--after{
+            transform: translateY(4px);
+            width:94%;
+            height:24px;
+            margin-top: 26px !important;
+            margin-left: 2px;
+            background-color: $base-color;
+            border:red 1.8px solid;
+            border-radius: 2px;
+            padding-left: 7px;
+            border: none;
+            outline: none;
+        }
+        &--pswAfter{
+            width:94%;
+            height:24px;
+            margin-left: 2px;
+            background-color: $base-color;
+            border:red 1.8px solid;
+            border-radius: 2px;
+            padding-left: 7px;
+            font-size: 14px;
+            transform: translateY(24px);
+            border: none;
+            outline:none;
+        }
+        &--btn{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color:$note-color;
+            letter-spacing: 3px;
+            position: absolute;
+            overflow: hidden;
+            margin: 26px 0 40px -80px;
+            cursor: pointer;
+        }
+        &--afterBtn{
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color:$note-color;
+            letter-spacing: 3px;
+            position: absolute;
+            overflow: hidden;
+            margin: 27px 0 40px -57px;
+            cursor: pointer;
+        }
+        &--date{
+            transform: translateY(-6px);
+            border: none;
+            margin-top:-25px;
+            margin-bottom:-15px;
+            height:22px;
+            font-size: 15px;
+            width:103%;
+            overflow: hidden;
+            margin-left: -12px;
+        }
+        
+    }
+    &__fieldset{
+            margin: 0 ;
+            height:42px;
+            border: 2px solid rgb(143, 138, 138) !important;
+            width:98%;
+            background-color: $base-color;
+            border-radius: 2px;
+            margin-top: -37px !important;
+            margin-bottom: 0px !important; 
+        
+        &--legend{
+           font-size: 12px;
+           font-weight: 400;
+           font-family: $font-open;
+           color: $additional-color;
+           margin-left: -8px;
+        }
+        &--password{
+            margin-bottom: 20px !important;
+            margin-top:-15px !important;
+
+        }
+    }
+
+    &__password{
+        position: relative;
+    }
+    &__note{
+        font-family: $font-open;
+        font-size: 12px;
+        font-weight: 400;
+        color:$additional-color;
+        &--requirements{
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+        &--info{
+            font-size: 13px;
+            font-weight: 400;
+            margin-top: 0;
+        }
+        &--needed{
+            font-size: 13.5px;
+        }
+        &--comment{
+            margin-top: -1px;
+        }
+    }
+    &__age{
+        display: flex;
+        &--btn{
+            font-family: $font-open;
+            font-weight: 500;
+            border: $border-color 1.8px solid;
+            background-color: $base-color;
+            margin-right: 10px;
+            width: 350px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 2px;
+            &:hover{
+                border:$additional-color 2px solid;
+            }
+            &:focus{
+                border: $orange-color 2px solid;
+            }
+        }
+    }
+    &__ageFieldset{
+        border: $border-color 1px solid;
+        height: 42px;
+        margin-bottom: 15px;
+        margin-top: -8px;
+        width: 98%;
+        &:hover{
+            border: 2px solid rgb(143, 138, 138) !important;
+        }
+    }
+    &__consent{
+        font-family: $font-open;
+        margin-top: 30px;
+        font-size: 14px;
+        font-weight: 400;
+        &--star{
+            color: red;
+        }
+        &--box{
+            height: 20px;
+            width: 20px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            -o-appearance: none;
+            appearance: none;
+            outline: none;
+            cursor: pointer;
+            border: 1px solid $border-color;
+            border-radius: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            &:checked{
+                opacity: 1;
+                border: 2px solid rgb(48, 190, 30);
+
+            }
+            &:hover{
+                border: 2px solid $additional-color;
+            }
+            &:after{
+                font-family: "Font Awesome 5 Free";
+                font-weight: 900;
+                content:"\f00c";
+                font-size:13px;
+                color:rgb(48, 190, 30);
+                display: none;
+            }
+            &:checked{
+                background-color: transparent;
+                &:after{
+                    display: block;
+                }
+                &:hover{
+                    border: 2px solid rgb(48, 190, 30);
+                }
+            }
+        }
+        &--container{
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 17px;
+        }
+        &--titles{
+            margin-left: 34px;
+            &--SecondPara{
+                font-size: 12px;
+                color: $additional-color;
+            }
+
+        }
+        &--line{
+            color: $border-color;
+            margin-top: 10px;
+            margin-bottom: 20px;
+                    height: 1px;
+        }
+        &--btn{
+            color:$note-color;
+            cursor: pointer;
+            font-size: 14px;
+        }
+    }
+    &__button{
+        float: right;
+        background-color: $orange-color;
+        color: $base-color;
+        border-radius: 2px;
+        letter-spacing: 2px;
+        font-weight: 500;
+        padding: 0 13px;
+        font-family: $font-open;
+        font-size: 14px;
+        cursor: pointer;
+        height: 40px;
+        border: none;
+        outline: none;
+        width: 300px;
+    }
+}

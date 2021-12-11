@@ -1,0 +1,33 @@
+@import 'config';
+.articlesContainer{
+    background-color: $base-color;
+    &__header{
+        position: absolute;
+        transform: translate(10px,-70px);
+        font-family: $font-open;
+        font-size: 26px;
+        font-weight: 400;
+    }
+}
+.articles{
+    display: flex;
+    justify-content: space-between;
+    height: 120px;
+    margin: 30px 20px 40px 20px;
+    align-items: center;
+    &__option{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60px;
+        cursor: pointer;
+        &--img{
+            width: 60px;
+        }
+        &--name{
+            font-family: $font-open;
+            font-weight: 700;
+            font-size: 13px;
+        }
+    }
+}

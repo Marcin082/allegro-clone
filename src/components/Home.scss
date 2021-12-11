@@ -1,0 +1,49 @@
+@import 'config';
+
+
+@media all and (min-width: 1500px) {
+    .HomeContainer {
+     margin-left:130px;
+     margin-right:130px;
+    }
+}
+.HomeContainer{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Home{
+    display: flex;
+    flex-direction: column;
+}
+.sliderElement{
+    &__first{
+        margin-top:20px;
+    display: flex;
+    flex: 1;
+    width: 100%;
+    align-items: stretch;
+    }
+    &__slogan{
+        width:300px;
+        object-fit: cover;
+    }
+    &__second{
+        margin-bottom: 50px;
+    }
+    &__third{
+      
+        &--header{
+            position: absolute;
+            transform: translate(10px,-93px);
+            font-family: $font-open;
+            font-size: 26px;
+            font-weight: 400;
+        }
+       
+    }
+    &__fifth{
+        
+
+    }
+}

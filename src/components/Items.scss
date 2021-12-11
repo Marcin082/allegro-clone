@@ -1,0 +1,52 @@
+@import 'config';
+
+.ItemList{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    transition: 1s;
+    overflow: hidden;
+    padding-bottom: 10px;
+    height: 370px;  
+    position: relative;
+    transform: translateY(-20px);
+    
+    &__items{
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+
+    }
+    &__btn{
+        
+        width: 40px;
+        height: 40px;
+        border:rgb(136, 136, 136) 1px solid;
+        background-color: white;
+        opacity: 0.6;
+        align-items: center;
+        transform: translateY(-280px);
+        border-radius: 1.5px;
+        
+        &:hover{
+            border:rgb(102, 102, 102) 2px solid;
+            cursor: pointer;
+        }
+        &--second{ 
+            float: right;
+            margin-right: 4px;
+        }
+        &--first{
+            margin-left: 4px;
+            
+        }
+    }
+    &__icon{
+        margin-top: 4px;
+        color: $additional-color;
+        height: 16px !important;
+        width: 14px !important;
+        font-weight: 500;
+    }
+}

@@ -1,0 +1,14 @@
+.slogans{
+    display: flex;
+    flex:3;
+    margin: 0 auto;
+    flex-grow:1;
+    align-items:stretch;
+    width:100%;
+    transform: translateY(-40px);
+    &__img{
+        width: 32.8%;
+        margin-right: 13px;
+        cursor: pointer;
+    }
+}
