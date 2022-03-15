@@ -1,9 +1,10 @@
 *{
+
   box-sizing: border-box;
   
 }
 body {
-  background-color: rgb(234, 238, 240);
+  background-color: rgb(234, 238, 241);
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
