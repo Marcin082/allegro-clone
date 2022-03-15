@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/allegro-clone/static/css/main.6423363d.chunk.css",
+    "main.js": "/allegro-clone/static/js/main.e11bc25d.chunk.js",
+    "main.js.map": "/allegro-clone/static/js/main.e11bc25d.chunk.js.map",
+    "runtime-main.js": "/allegro-clone/static/js/runtime-main.74f82854.js",
+    "runtime-main.js.map": "/allegro-clone/static/js/runtime-main.74f82854.js.map",
+    "static/js/2.2631d1c6.chunk.js": "/allegro-clone/static/js/2.2631d1c6.chunk.js",
+    "static/js/2.2631d1c6.chunk.js.map": "/allegro-clone/static/js/2.2631d1c6.chunk.js.map",
+    "static/js/3.9d6e21d1.chunk.js": "/allegro-clone/static/js/3.9d6e21d1.chunk.js",
+    "static/js/3.9d6e21d1.chunk.js.map": "/allegro-clone/static/js/3.9d6e21d1.chunk.js.map",
+    "index.html": "/allegro-clone/index.html",
+    "static/css/main.6423363d.chunk.css.map": "/allegro-clone/static/css/main.6423363d.chunk.css.map",
+    "static/js/2.2631d1c6.chunk.js.LICENSE.txt": "/allegro-clone/static/js/2.2631d1c6.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.74f82854.js",
+    "static/js/2.2631d1c6.chunk.js",
+    "static/css/main.6423363d.chunk.css",
+    "static/js/main.e11bc25d.chunk.js"
+  ]
+}
