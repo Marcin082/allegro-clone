@@ -3,7 +3,8 @@ import Header from './components/Header';
 import Home from './components/Home';
 import Registration from './components/Registration';
 import Login from './components/Login';
-import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import {  Route, Link, Switch } from "react-router-dom";
+import { HashRouter } from "react-router-dom";
 import { useContext, useEffect, useState } from 'react';
 import { auth } from './config/firebase';
 import { GlobalContext, GlobalProvider } from './context/GlobalState';
@@ -26,7 +27,7 @@ const { SetUser } = useContext(GlobalContext);
     })
   },[])
   return (
-    <Router>
+    <HashRouter>
     <div className="App">
       
       <Switch>
@@ -43,7 +44,7 @@ const { SetUser } = useContext(GlobalContext);
           </Route>
       </Switch>
     </div>
-    </Router>
+    </HashRouter>
   );
 }
 
