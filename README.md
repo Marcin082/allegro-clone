@@ -2,11 +2,12 @@
 
 ## About
 ![](src/assets/logo.png)
-A small web app that tries to imitate the desktop web version of allegro site,you can sign up or log in and have your user authentification feauture thanks to Firebase.
+A small web app that tries to imitate the desktop web version of allegro site. It is full responsive desktop app where you can sign up or log in and have your user authentification feauture thanks to Firebase.
 
 ## Demo
 
- Here is a working live demo : DDDDD
+ Here is a working live demo : [https://marcin082.github.io/allegro-clone/](https://marcin082.github.io/allegro-clone/)
+
 
 
 ![](src/assets/screen1.png)
