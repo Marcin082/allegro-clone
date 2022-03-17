@@ -13,7 +13,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div style={{   
-            flexDirection:screenWidth<400?'column':'row',
+            flexDirection:screenWidth<500?'column':'row',
             }} className="footer__section">
                 <div className="footer__column">
                     <h3 className="footer__column--header">Allegro</h3>
@@ -66,7 +66,7 @@ const Footer = () => {
             
             <div  className="footer__section">
                 <div style={{   
-            flexWrap:screenWidth<400?'wrap':'nowrap',
+            flexWrap:screenWidth<500?'wrap':'nowrap',
             }} className="footer__row">
                     <img alt="icon" className="footer__row--link" src="https://assets.allegrostatic.com/metrum/icon/appstore-1bc3bc3c06.svg"/>
                     <img alt="icon" className="footer__row--link" src="https://assets.allegrostatic.com/metrum/icon/playstore-d44c743ccc.svg"/>
