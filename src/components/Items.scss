@@ -50,3 +50,9 @@
         font-weight: 500;
     }
 }
+@media (max-width:$breakpoint-mobile) {
+    .ItemList{
+        height: 280px;  
+
+    }
+}

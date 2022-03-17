@@ -218,3 +218,20 @@
         margin-top: 5px;
     }
 }
+@media (max-width:$breakpoint-mobile) {
+    .loginContainer{
+        width:90% !important;
+        &__button--btn{
+            width:140px;
+            font-size:12px;
+        }
+        
+    }
+    .footer{
+        &__rules{
+         width:90% !important;
+        }
+    }
+    
+
+}

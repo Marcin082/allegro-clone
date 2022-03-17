@@ -1,10 +1,20 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Footer.scss'
 import { Link } from 'react-router-dom';
 const Footer = () => {
+    const [screenWidth, setScreenWidth] = useState(window.innerWidth);
+    React.useEffect(() => {
+        function handleResize() {
+          setScreenWidth(window.innerWidth);
+        }
+        console.log(screenWidth);
+        window.addEventListener("resize", handleResize);
+      });
     return (
         <div className="footer">
-            <div className="footer__section">
+            <div style={{   
+            flexDirection:screenWidth<400?'column':'row',
+            }} className="footer__section">
                 <div className="footer__column">
                     <h3 className="footer__column--header">Allegro</h3>
                     <li className="footer__column--option">O nas</li>
@@ -54,24 +64,26 @@ const Footer = () => {
             
                       
             
-            <div className="footer__section">
-                <div className="footer__row">
-                    <img className="footer__row--link" src="https://assets.allegrostatic.com/metrum/icon/appstore-1bc3bc3c06.svg"/>
-                    <img className="footer__row--link" src="https://assets.allegrostatic.com/metrum/icon/playstore-d44c743ccc.svg"/>
-                    <img className="footer__row--link" src="https://assets.allegrostatic.com/metrum/icon/appgallery-e4b87bbf17.svg"/>
-                    <img className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/facebook-a2b92f9dcb.svg"/>
-                    <img className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/linkedin-cd6807318a.svg"/>
-                    <img className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/instagram-95464778fb.svg"/>
-                    <img className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/pinterest-d8d9e5a8f6.svg"/>
-                    <img className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/youtube-dca5fff408.svg"/>
-                    <img className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/charity-7610bf9ae4.svg"/>
+            <div  className="footer__section">
+                <div style={{   
+            flexWrap:screenWidth<400?'wrap':'nowrap',
+            }} className="footer__row">
+                    <img alt="icon" className="footer__row--link" src="https://assets.allegrostatic.com/metrum/icon/appstore-1bc3bc3c06.svg"/>
+                    <img alt="icon" className="footer__row--link" src="https://assets.allegrostatic.com/metrum/icon/playstore-d44c743ccc.svg"/>
+                    <img alt="icon" className="footer__row--link" src="https://assets.allegrostatic.com/metrum/icon/appgallery-e4b87bbf17.svg"/>
+                    <img alt="icon" className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/facebook-a2b92f9dcb.svg"/>
+                    <img alt="icon" className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/linkedin-cd6807318a.svg"/>
+                    <img alt="icon" className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/instagram-95464778fb.svg"/>
+                    <img alt="icon" className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/pinterest-d8d9e5a8f6.svg"/>
+                    <img alt="icon" className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/youtube-dca5fff408.svg"/>
+                    <img alt="icon" className="footer__row--icon" src="https://assets.allegrostatic.com/metrum/icon/charity-7610bf9ae4.svg"/>
                 </div>           
             </div>
 
             <div className="footer__ending">
                 <p className="footer__ending--paragraph">Korzystanie z serwisu oznacza akceptację <span className="footer__ending--span">regulaminu</span></p>
                 <Link to="/">
-                    <img className="footer__ending--logo" src="https://a.allegroimg.com/original/126b6e/bf09245243ef947800dfb73121cb"/>
+                    <img alt="icon" className="footer__ending--logo" src="https://a.allegroimg.com/original/126b6e/bf09245243ef947800dfb73121cb"/>
                 </Link>
             </div>
         </div>

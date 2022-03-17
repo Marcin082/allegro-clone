@@ -66,4 +66,18 @@ $border-color2: rgb(134, 134, 134);
    
     
 }
-
+@media (max-width:$breakpoint-mobile) {
+    .categories{
+        height:64.4px;
+        
+       &__option{
+           min-width:70px;
+           &--image{
+            width:30px;
+           }
+           &--name{
+            font-size: 8.5px;
+        }
+       }
+    }
+}

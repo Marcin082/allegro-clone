@@ -46,7 +46,7 @@ const SchoolArticles = () => {
     ]
     return (
         <div className="articlesContainer">
-            <h3 className="articlesContainer__header" >Wszystko do szkoły w dobrych cenach</h3>
+            <h3 className="articlesContainer__header" >Wszystko do szkoły</h3>
             <div className="articles">
                 {Articles.map((article)=>{
                     return <div className="articles__option">

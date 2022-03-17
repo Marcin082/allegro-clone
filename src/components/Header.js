@@ -1,15 +1,10 @@
 import React, { useContext, useState } from 'react';
 import './Header.scss'
 import {Link} from "react-router-dom";
-import KeyboardArrowDownIcon from '@material-ui/icons/KeyboardArrowDown';
 import StarBorderIcon from '@material-ui/icons/StarBorder';
-import ShoppingBasketOutlinedIcon from '@material-ui/icons/ShoppingBasketOutlined';
-import PersonOutlineOutlinedIcon from '@material-ui/icons/PersonOutlineOutlined';
-import ChatIcon from '@material-ui/icons/Chat';
-import NotificationsNoneIcon from '@material-ui/icons/NotificationsNone';
 import ProfileSign from './ProfileSign';
 import ProfileManagement from './ProfileManagement';
-import { GlobalContext, GlobalProvider } from '../context/GlobalState';
+import { GlobalContext } from '../context/GlobalState';
 const Header = ({categories}) => {
     const [showLogin, setShowLogin] = useState(false)
     const [category, setCategory] = useState("")
@@ -23,7 +18,7 @@ const Header = ({categories}) => {
         <>
         <header className="header">
             <Link to="/">
-                <img className="header__logo" src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg"/>
+                <img alt="logo" className="header__logo" src="https://assets.allegrostatic.com/metrum/brand/allegro-347440b030.svg"/>
             </Link>
             <div className="header__search">
                 <input type="text" className="header__input header__input--searchText" placeholder="czego szukasz?"/>

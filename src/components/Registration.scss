@@ -285,3 +285,11 @@
         width: 300px;
     }
 }
+@media (max-width:$breakpoint-mobile) {
+    .register{
+        width:90% ;
+        &__age--btn{
+            font-size:12px;
+        }
+    }
+}

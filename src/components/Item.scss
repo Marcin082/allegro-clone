@@ -37,3 +37,15 @@
         }
     }
 }
+@media (max-width:$breakpoint-mobile) {
+    .itemOption{
+        max-width:200px;
+        &__image{
+            height: 120px;
+        }
+        &__desc{
+            font-size: 10px;
+            margin-bottom:20px;
+        }
+    }
+}

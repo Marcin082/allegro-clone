@@ -1,5 +1,10 @@
 @import 'config';
 
+@media (max-width:$breakpoint-mobile) {
+    .slider__box--img{
+        height:130px !important;
+    }
+}
 .slider{
     display: flex;
     flex-direction: column;

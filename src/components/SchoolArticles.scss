@@ -1,4 +1,9 @@
 @import 'config';
+@media (max-width:$breakpoint-mobile) {
+    .articles{
+      
+    }
+  }
 .articlesContainer{
     background-color: $base-color;
     &__header{
@@ -15,6 +20,7 @@
     height: 120px;
     margin: 30px 20px 40px 20px;
     align-items: center;
+    overflow: hidden;
     &__option{
         display: flex;
         flex-direction: column;
