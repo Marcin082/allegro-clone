@@ -20,6 +20,7 @@ A small web app that tries to imitate the desktop web version of allegro site. I
 * Javascript
 * Scss
 * React
+* React Router
 * Context API
 * Authentication with firebase
 
