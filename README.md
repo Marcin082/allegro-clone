@@ -6,7 +6,7 @@ A small web app that tries to imitate the desktop web version of allegro site. I
 
 ## Demo
 
- Here is a working live demo : [https://marcin082.github.io/allegro-clone/](https://marcin082.github.io/allegro-clone/)
+ Here is a working live demo : [DEMO](https://marcin082.github.io/allegro-clone/)
 
 
 
